@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Primary Meta Tags -->
+    <title>Виртуальные прогулки по «Тавриде»</title>
+    <meta type="description" content="Description index">
+    <link rel="stylesheet" media="all" href="/css/style.min.css" />
+    <!-- BEGIN social data -->
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="">
+    <meta property="twitter:description" content="">
+    <meta property="twitter:image" content="">
+    <!-- END social data -->
+    <link rel="icon" href="/images/favicon/favicon.ico"><!-- 32×32 -->
+    <link rel="icon" href="/images/favicon/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/images/favicon/apple-touch-icon.png"><!-- 180×180 -->
+    <link rel="manifest" href="/images/favicon/manifest.webmanifest">
+    <meta name="theme-color" content="#4E458F">
+  </head>
+  <body class="page__body" id="start">
+    <section class="intro  intro--fixed" id="intro">
+      <div class="intro__wrapper">
+        <img class="intro__logo" src="images/logo-white.svg" width="50" height="50" alt="Логотип Тавриды">
+        <h1 class="intro__title"> Виртуальные прогулки <br>
+          <span class="intro__title-color-text"> по тавриде </span>
+        </h1>
+        <div class="intro__text">
+          <p> Арт-кластер «Таврида» – пространство, которое оберегают мир, любовь и искусство. Это «место силы», вдохновляющее молодых творцов на самые смелые идеи. Один из таких проектов – этот сайт. Исследуй территорию резиденции виртуально, узнавай о её легендах и рассматривай 3D-модели арт-объектов. Море эмоций и творчества ждут тебя! </p>
+        </div>
+        <a href="#map" class="intro__button link js-scroll">Доступен с 29 июня</a>
+        <div class="intro__bottom">
+          <p class="intro__copy">Школа цифровизации искусства</p>
+          <a href="#" class="intro-blind-version  blind-version-btn">Версия для слабовидящих</a>
+        </div>
+      </div>
+    </section>
+    <header class="header">
+      <div class="header__wrapper">
+        <nav class="main-nav">
+          <a class="logo  js-scroll" href="#start">
+            <svg class="main-nav__icon" aria-hidden="true" width="100" height="100">
+              <use class="main-nav__icon-menu" href="images/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <button class="main-nav__button" type="button" aria-expanded="false" aria-controls="main-nav__list">
+            <svg class="main-nav__icon" aria-hidden="true" width="32" height="32">
+              <use class="main-nav__icon-menu" href="images/sprite_auto.svg#menu"></use>
+              <use class="main-nav__icon-cross" href="images/sprite_auto.svg#cross"></use>
+            </svg>
+          </button>
+          <ul class="main-nav__list" id="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link js-scroll" href="#map">карта</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link js-scroll" href="#mission">миссия</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link js-scroll" href="#">промо</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link js-scroll" href="#team">команда</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link js-scroll" href="#backstage">backstage</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">прогуляться в vr </a>
+            </li>
+            <li class="main-nav__item  main-nav__item--social">
+              <ul class="social">
+                <li>
+                  <a href="#">
+                    <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M48 12C48 5.37258 42.6274 0 36 0H12C5.37258 0 0 5.37258 0 12V36C0 42.6274 5.37258 48 12 48H36C42.6274 48 48 42.6274 48 36V12ZM8 22.9114C8 16.7247 12.7035 11.5521 18.8623 10.9655L25.1703 10.3647C32.6287 9.65441 38.9072 15.8769 38.2637 23.3413L37.9456 27.0307C37.4107 33.2356 32.2179 38 25.99 38H20C13.3726 38 8 32.6274 8 26V22.9114Z" fill="currentColor" />
+                      <path d="M24 48C37.258 48 48 37.258 48 24C48 10.742 37.258 0 24 0C10.742 0 0 10.742 0 24C0 37.258 10.742 48 24 48ZM10.982 23.48L34.122 14.558C35.196 14.17 36.134 14.82 35.786 16.444L35.788 16.442L31.848 35.004C31.556 36.32 30.774 36.64 29.68 36.02L23.68 31.598L20.786 34.386C20.466 34.706 20.196 34.976 19.576 34.976L20.002 28.87L31.122 18.824C31.606 18.398 31.014 18.158 30.376 18.582L16.634 27.234L10.71 25.386C9.424 24.978 9.396 24.1 10.982 23.48Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" width="48" height="48" rx="12" fill="currentColor" />
+                      <path d="M34.8923 15.7494C35.9937 16.0517 36.8613 16.9422 37.1556 18.0732C37.6907 20.1231 37.6907 24.4001 37.6907 24.4001C37.6907 24.4001 37.6907 28.6769 37.1556 30.7268C36.8613 31.8578 35.9937 32.7485 34.8923 33.0508C32.896 33.6 24.8907 33.6 24.8907 33.6C24.8907 33.6 16.8852 33.6 14.8889 33.0508C13.7874 32.7485 12.9199 31.8578 12.6255 30.7268C12.0906 28.6769 12.0906 24.4001 12.0906 24.4001C12.0906 24.4001 12.0906 20.1231 12.6255 18.0732C12.9199 16.9422 13.7874 16.0517 14.8889 15.7494C16.8852 15.2 24.8907 15.1999 24.8907 15.1999C24.8907 15.1999 32.896 15.2 34.8923 15.7494Z" fill="white" />
+                      <path d="M22.4907 28.8V20.8L28.8908 24.8003L22.4907 28.8Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <svg width="50" height="48" viewBox="0 0 50 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect x="1" width="48" height="48" rx="12" fill="currentColor" />
+                      <path d="M19.6138 11.2774C20.9793 11.2152 21.4155 11.2 24.8919 11.2H24.8878C28.3652 11.2 28.7999 11.2152 30.1651 11.2774C31.5279 11.3398 32.4585 11.5555 33.2747 11.872C34.1172 12.1987 34.8293 12.636 35.5413 13.348C36.2534 14.0595 36.6906 14.7737 37.0187 15.6156C37.3334 16.4293 37.5494 17.3595 37.6133 18.7222C37.6746 20.0875 37.6907 20.5239 37.6907 24.0001C37.6907 27.4764 37.6746 27.9117 37.6133 29.277C37.5494 30.6392 37.3334 31.5696 37.0187 32.3837C36.6906 33.2253 36.2534 33.9394 35.5413 34.6509C34.83 35.3629 34.1171 35.8014 33.2754 36.1283C32.4609 36.4448 31.5297 36.6606 30.1671 36.723C28.8018 36.7851 28.3668 36.8003 24.8903 36.8003C21.4142 36.8003 20.9783 36.7851 19.6128 36.723C18.2505 36.6606 17.3201 36.4448 16.5056 36.1283C15.6642 35.8014 14.9501 35.3629 14.2389 34.6509C13.5272 33.9394 13.0898 33.2253 12.7626 32.3835C12.4464 31.5696 12.2306 30.6395 12.168 29.2767C12.1061 27.9114 12.0906 27.4764 12.0906 24.0001C12.0906 20.5239 12.1066 20.0872 12.1677 18.722C12.229 17.3598 12.445 16.4293 12.7624 15.6153C13.0904 14.7737 13.5277 14.0595 14.2397 13.348C14.9512 12.6363 15.6654 12.199 16.5072 11.872C17.3211 11.5555 18.2512 11.3398 19.6138 11.2774Z" fill="white" />
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M23.7436 13.5069C23.9666 13.5065 24.2065 13.5066 24.4652 13.5067L24.892 13.5069C28.3096 13.5069 28.7146 13.5191 30.0643 13.5805C31.3123 13.6375 31.9895 13.8461 32.4407 14.0213C33.0382 14.2533 33.464 14.5306 33.9118 14.9786C34.3597 15.4266 34.637 15.8534 34.8697 16.4507C35.0449 16.9013 35.2537 17.5787 35.3104 18.8267C35.3717 20.1761 35.3851 20.5814 35.3851 23.9973C35.3851 27.4134 35.3717 27.8187 35.3104 29.1681C35.2534 30.4161 35.0449 31.0935 34.8697 31.5441C34.6376 32.1414 34.3597 32.5668 33.9118 33.0146C33.4637 33.4626 33.0383 33.7398 32.4407 33.9718C31.9901 34.1479 31.3123 34.3558 30.0643 34.413C28.7149 34.4743 28.3096 34.4875 24.892 34.4875C21.4739 34.4875 21.0689 34.4743 19.7195 34.413C18.4715 34.3554 17.7943 34.1467 17.3428 33.9715C16.7455 33.7396 16.3187 33.4623 15.8707 33.0142C15.4228 32.5662 15.1454 32.1406 14.9128 31.543C14.7376 31.0924 14.5288 30.4151 14.472 29.1671C14.4107 27.8177 14.3984 27.4124 14.3984 23.9942C14.3984 20.576 14.4107 20.1728 14.472 18.8235C14.5291 17.5755 14.7376 16.8981 14.9128 16.4469C15.1448 15.8496 15.4228 15.4229 15.8707 14.9749C16.3187 14.5269 16.7455 14.2495 17.3428 14.017C17.794 13.841 18.4715 13.633 19.7195 13.5757C20.9003 13.5223 21.358 13.5063 23.7436 13.5037V13.5069ZM31.7245 15.6323C30.8765 15.6323 30.1885 16.3194 30.1885 17.1678C30.1885 18.0158 30.8765 18.7038 31.7245 18.7038C32.5726 18.7038 33.2605 18.0158 33.2605 17.1678C33.2605 16.3197 32.5726 15.6318 31.7245 15.6318V15.6323ZM18.3185 24.0003C18.3185 20.3702 21.2615 17.427 24.8917 17.4269C28.5218 17.4269 31.4642 20.3702 31.4642 24.0003C31.4642 27.6305 28.5221 30.5724 24.8918 30.5724C21.2617 30.5724 18.3185 27.6305 18.3185 24.0003Z" fill="currentColor" />
+                      <path d="M24.8916 19.7332C27.248 19.7332 29.1583 21.6434 29.1583 23.9999C29.1583 26.3563 27.248 28.2667 24.8916 28.2667C22.5351 28.2667 20.625 26.3563 20.625 23.9999C20.625 21.6434 22.5351 19.7332 24.8916 19.7332Z" fill="currentColor" />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-nav__item main-nav__item--blind-version"><a class="blind-version-btn" href="#">Версия для слабовидящих</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- BEGIN content -->
+    <main class="page__main">
+      <!-- body overlay -->
+      <div class="body-blackout"></div>
+      <section class="map">
+        <div id="map">
+        </div>
+        <div class="map__wrapper">
+          <div class="leaflet-control map__controls map__controls--top-right">
+            <p class="map__control-text">Аудиогиды</p>
+            <ul class="map__controls-list">
+              <li class="map__controls-item">
+                <a class="map__controls-btn  map__controls-btn--audio" href="#">Название аудиогида</a>
+              </li>
+              <li class="map__controls-item">
+                <a class="map__controls-btn  map__controls-btn--audio" href="#">Название аудиогида</a>
+              </li>
+            </ul>
+          </div>
+          <div class="map__mobile-vr"><a class="btn" href="https://vr-tavrida.art/data/vtours/tavrida/?lp=9a&amp;lang=ru" target="_blank">Прогуляться в VR</a></div>
+          <div class="map__objects">
+            <h2>ВИРТУАЛЬНЫЕ ОБЪЕКТЫ</h2>
+            <ul>
+              <li>Юла</li>
+              <li>Ассоль</li>
+              <li>Ракушка</li>
+              <li>Маяк</li>
+              <li>Маски</li>
+              <li>Киты</li>
+              <li>Там-Там</li>
+              <li>Стоунхендж</li>
+              <li>Феникс</li>
+              <li>Таврический поток</li>
+              <li>Барабан</li>
+              <li>Светофор</li>
+              <li>Мир. Любовь. Искусство</li>
+              <li>Культурные слои</li>
+              <li>Парус</li>
+              <li>Ласточкино гнездо</li>
+              <li>Башня</li>
+              <li>Бумбокс</li>
+              <li>Невидимая рука</li>
+              <li>Арт</li>
+              <li>Многогорка 2.0</li>
+              <li>Друза</li>
+              <li>Город возможностей</li>
+              <li>Древо</li>
+              <li>Глаза</li>
+              <li>Кариатиды русского авангарда</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Секция цитата -->
+      <section class="cite" id="mission">
+        <div class="cite__wrapper">
+          <h1 class="cite__main-title">Проект команды Школы цифровизации искусства третьего заезда «Тавриды» 2021 года</h1>
+          <h2 class="cite__title">Наша миссия</h2>
+          <div class="cite__text">
+            <p>Мы верим <br> что секрет созидательного развития <br> цивилизации именно в синтезе науки,<br> технологий и искусства. Вдохновившись<br> арт-кластером “Таврида”, мы сделали его<br> доступным для всех.</p>
+          </div>
+          <div class="cite__buttons  fixed-buttons">
+            <a class="cite__button" id="play" href="#"><img src="/images/icon-q.svg" alt="Иконка аудио-"></a>
+            <a class="cite__button  cite__button-with-bg  cite__button-with-bg--animated" href="#"><img src="/images/icon-vr-white.svg" alt="Иконка посмотреть в VR"></a>
+            <audio id="song" src="https://vr-tavrida.art/data/vtours/tavrida/audio/276_sound_ru.mp3"></audio>
+          </div>
+        </div>
+      </section>
+      <!-- Секция цитата -->
+      <section class="project" id="project">
+        <div class="project__wrapper">
+          <h2 class="project__title">Проект в цифрах</h2>
+          <p class="project__subtitle">В рамках заезда «Новые русские сезоны» командой Школы цифровизации искусства была оцифрована территория «Тавриды»: созданы 16 высокоточных 3D-моделей арт-объектов, выполненных методом фотограмметрии, панорамные снимки высокого качества и медиагиды. В итоге был разработан этот сайт, благодаря которому каждый может виртуально посетить территорию «Тавриды».</p>
+          <ul class="project__list">
+            <li class="project__item">
+              <a href="#">
+                <article class="project__article">
+                  <p class="project__number">8 <span>ТБ</span></p>
+                  <p class="project__item-text">фото-, видео- и аэросъемки</p>
+                </article>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="#">
+                <article class="project__article">
+                  <p class="project__number">60 000+</p>
+                  <p class="project__item-text">символов текста написано копирайтерами</p>
+                </article>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="#">
+                <article class="project__article">
+                  <p class="project__number">52</p>
+                  <p class="project__item-text">истории в двух<br> аудио- и медиагидах</p>
+                </article>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="#">
+                <article class="project__article">
+                  <p class="project__number">30</p>
+                  <p class="project__item-text">виртуальных панорам</p>
+                </article>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="#">
+                <article class="project__article">
+                  <p class="project__number">16</p>
+                  <p class="project__item-text">3D-моделей арт-объектов<br> из 9697 кадров и 1,2 млрд полигонов</p>
+                </article>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="#">
+                <article class="project__article">
+                  <p class="project__number">7 <span>часов</span></p>
+                  <p class="project__item-text">потребуется для полного знакомства с медиаконтентом нашего сайта</p>
+                </article>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="#">
+                <article class="project__article">
+                  <p class="project__number">24</p>
+                  <p class="project__item-text">стикера в Телеграм</p>
+                </article>
+              </a>
+            </li>
+            <li class="project__item">
+              <a href="#">
+                <article class="project__article">
+                  <p class="project__number">57</p>
+                  <p class="project__item-text"> картин и скульптур оцифровано</p>
+                </article>
+              </a>
+            </li>
+          </ul>
+          <div class="project__middle-text">
+            <p>и все это за 8 дней сделала</p>
+          </div>
+          <ul class="project__list  project__list--bottom">
+            <li class="project__item">
+              <article class="project__article  project__article--no-description">
+                <p class="project__number">1</p>
+                <p class="project__item-text">Команда</p>
+              </article>
+            </li>
+            <li class="project__item">
+              <article class="project__article  project__article--no-description">
+                <p class="project__number">50</p>
+                <p class="project__item-text">человек</p>
+              </article>
+            </li>
+          </ul>
+          <div class="project__middle-text">
+            <p>которые не были знакомы до старта проекта</p>
+          </div>
+          <p class="project__blind-version-text">И всё это сделала 1 команда из 50 человек, которые не были знакомы до старта проекта </p>
+          <a href="#learn-more" class="project__link  popup-inline">Узнать еще</a>
+        </div>
+      </section>
+      <section class="history">
+        <div class="history__wrapper">
+          <h2 class="history__title">История места</h2>
+          <div class="history__row">
+            <div class="history__col">
+              <button class="popup-trigger" data-popup-trigger="place-history" type="button">
+                <span class="visually-hidden">Узнать больше</span>
+                <img src="/images/team-thumb.jpg" alt="Alt Text!">
+              </button>
+              <section data-popup-modal="place-history" class="popup-modal ">
+                <article class="popup__article">
+                  <button class=" popup-modal__close" type="button">
+                    <svg class="main-nav__icon" aria-hidden="true" width="42" height="36">
+                      <use class="main-nav__icon-cross" href="/images/sprite_auto.svg#cross"></use>
+                    </svg>
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                  <div class="popup__content">
+                    <h2>О проекте</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita minima illo doloremque. Minus est, quasi hic dolorem ad perspiciatis nihil veniam temporibus odit consectetur et. Reiciendis id quas ex. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita minima illo doloremque. Minus est, quasi hic dolorem ad perspiciatis nihil veniam temporibus odit consectetur et. Reiciendis id quas ex. </p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita minima illo doloremque. Minus est, quasi hic dolorem ad perspiciatis nihil veniam temporibus odit consectetur et. Reiciendis id quas ex. </p>
+                  </div>
+                </article>
+              </section>
+            </div>
+            <div class="history__col">
+              <div class="history__text">
+                <p>Тут возможно какой-то текст. Слева фотография. Или вместо этого текста можно поставить фотографию.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="video-section">
+        <div class="video-section__wrapper">
+          <h2 class="video-section__title">Место силы</h2>
+        </div>
+        <div class="video">
+          <a class="video__link" href="https://youtu.be/RV7Ur2ACA5E">
+            <picture>
+              <source srcset="https://i.ytimg.com/vi_webp/RV7Ur2ACA5E/maxresdefault.webp" type="image/webp">
+              <img class="video__media" src="https://i.ytimg.com/vi/RV7Ur2ACA5E/maxresdefault.jpg" alt="Арт-кластер Таврида 2021 - Место Силы">
+            </picture>
+          </a>
+          <button class="video__button" aria-label="Запустить видео">
+            <svg width="68" height="48" viewBox="0 0 68 48">
+              <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+              </path>
+              <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section class="team">
+        <div class="team__wrapper">
+          <h2 class="team__title">Это сделали мы</h2>
+          <p class="team__subtitle">Выбери свою команду</p>
+          <ul class="team__list">
+            <li class="team__item">
+              <section class="team__item-photo  team__item-photo--color-1">
+                <picture>
+                  <source srcset="/images/team-thumb.webp" type="image/webp">
+                  <source srcset="/images/team-thumb.jpg" type="image/jpeg">
+                  <img src="/images/team-thumb.jpg" alt="Alt Text!">
+                </picture>
+                <p class="team__item-name"> &lt; РУКОВОДИТЕЛЬ /&gt; </p>
+              </section>
+              <section class="team__item-description  team__item-description--color-1">
+                <h3> &lt; ВЕБ-ГРУППА /&gt; </h3>
+                <ul>
+                  <li>Вы становитесь частью причудливого бионического супер-организма.</li>
+                  <li>Сидите в комфортабельном павильоне с кондиционером.</li>
+                  <li>Вы – самые незагорелые из заезда. </li>
+                  <li>Придумаете тысячу (может, миллион?) идей в поисках одной лучшей.</li>
+                  <li>Уязвимость – работаете только «от розетки». </li>
+                </ul>
+                <button class="btn  popup-trigger" data-popup-trigger="boss">кто здесь?</button>
+              </section>
+              <section data-popup-modal="boss" class="popup-modal ">
+                <article class="team__popup">
+                  <button class=" popup-modal__close" type="button">
+                    <svg class="main-nav__icon" aria-hidden="true" width="42" height="36">
+                      <use class="main-nav__icon-cross" href="images/sprite_auto.svg#cross"></use>
+                    </svg>
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                  <h3 class="team__popup-title">РУКОВОДИТЕЛЬ</h3>
+                  <div class="team__popup-photo">
+                    <picture>
+                      <source srcset="/images/team-thumb.webp" type="image/webp">
+                      <source srcset="/images/team-thumb.jpg" type="image/jpeg">
+                      <img src="/images/team-thumb.jpg" alt="Фотография">
+                    </picture>
+                  </div>
+                  <div class="team__popup-text">
+                    <h4>Владимир Определенов</h4>
+                    <p>Заместитель директора ГМИИ им. А.С. Пушкина по цифровому развитию</p>
+                    <p>Заведующий кафедрой информационных технологий в сфере культуры НИУ ВШЭ</p>
+                    <p>Член Президиума ИКОМ России и председатель Совета по цифровому развитию музеев при ИКОМ России</p>
+                    <p>Член управляющего Совета ведущего клуба ИТ-директоров и директоров по цифровой трансформации России 4CIO</p>
+                  </div>
+                </article>
+              </section>
+            </li>
+            <li class="team__item">
+              <section class="team__item-photo  team__item-photo--color-2">
+                <picture>
+                  <source srcset="/images/team-thumb-2.webp" type="image/webp">
+                  <source srcset="/images/team-thumb.jpg" type="image/jpeg">
+                  <img src="/images/team-thumb.jpg" alt="Alt Text!">
+                </picture>
+                <p class="team__item-name"> &lt; ФОТО-<br>И ВИДЕОСЪЕМКА /&gt; </p>
+              </section>
+              <section class="team__item-description  team__item-description--color-2">
+                <h3> &lt; ВЕБ-ГРУППА /&gt; </h3>
+                <ul>
+                  <li>Вы становитесь частью причудливого бионического супер-организма.</li>
+                  <li>Сидите в комфортабельном павильоне с кондиционером.</li>
+                  <li>Вы – самые незагорелые из заезда. </li>
+                  <li>Придумаете тысячу (может, миллион?) идей в поисках одной лучшей.</li>
+                  <li>Уязвимость – работаете только «от розетки». </li>
+                </ul>
+                <button class="btn  popup-trigger" data-popup-trigger="team-1">кто здесь?</button>
+              </section>
+              <section data-popup-modal="team-1" class="popup-modal ">
+                <article class="team__popup">
+                  <button class=" popup-modal__close" type="button">
+                    <svg class="main-nav__icon" aria-hidden="true" width="42" height="36">
+                      <use class="main-nav__icon-cross" href="images/sprite_auto.svg#cross"></use>
+                    </svg>
+                    <span class="visually-hidden">Закрыть</span>
+                  </button>
+                  <h3 class="team__popup-title">ВЕБ-ГРУППА</h3>
+                  <div class="team__popup-photo">
+                    <div class="team__popup-slider">
+                      <!-- Slider main container -->
+                      <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                          <!-- Slides -->
+                          <div class="swiper-slide"><img src="/images/team-thumb.jpg" alt="Alt Text!"></div>
+                          <div class="swiper-slide"><img src="/images/team-thumb.jpg" alt="Alt Text!"></div>
+                          <div class="swiper-slide"><img src="/images/team-thumb.jpg" alt="Alt Text!"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="team__popup-text">
+                    <p><strong>Наталия Мозжухина</strong> - специалист по созданию виртуальных туров, администратор сайтов ГМИИ им. А.С. Пушкина.</p>
+                    <ul>
+                      <li>Бабина Анна</li>
+                      <li>Бочаров Сергей </li>
+                      <li>Елфимова Яна</li>
+                      <li>Кудряшова Елена </li>
+                      <li>Левочкин Павел</li>
+                      <li>Новикова Екатерина</li>
+                      <li>Палий Анна</li>
+                      <li>Проскурин Алексей</li>
+                      <li>Степанов Семен</li>
+                      <li>Сумеди Анастасия</li>
+                      <li>Трофимова Татьяна</li>
+                      <li>Ямалиева Алсу</li>
+                    </ul>
+                  </div>
+                </article>
+              </section>
+            </li>
+            <li class="team__item">
+              <section class="team__item-photo  team__item-photo--color-3">
+                <picture>
+                  <source srcset="/images/team-thumb.webp" type="image/webp">
+                  <source srcset="/images/team-thumb.jpg" type="image/jpeg">
+                  <img src="/images/team-thumb.jpg" alt="Alt Text!">
+                </picture>
+                <p class="team__item-name"> &lt; СТОРИТЕЛЛИНГ /&gt; </p>
+              </section>
+              <section class="team__item-description  team__item-description--color-3">
+                <h3> &lt; ВЕБ-ГРУППА /&gt; </h3>
+                <ul>
+                  <li>Вы становитесь частью причудливого бионического супер-организма.</li>
+                  <li>Сидите в комфортабельном павильоне с кондиционером.</li>
+                  <li>Вы – самые незагорелые из заезда. </li>
+                  <li>Придумаете тысячу (может, миллион?) идей в поисках одной лучшей.</li>
+                  <li>Уязвимость – работаете только «от розетки». </li>
+                </ul>
+                <button class="btn  popup-trigger" data-popup-trigger="team-2">кто здесь?</button>
+              </section>
+            </li>
+            <li class="team__item">
+              <section class="team__item-photo  team__item-photo--color-4">
+                <picture>
+                  <source srcset="/images/team-thumb.webp" type="image/webp">
+                  <source srcset="/images/team-thumb.jpg" type="image/jpeg">
+                  <img src="/images/team-thumb.jpg" alt="Alt Text!">
+                </picture>
+                <p class="team__item-name"> &lt; ВЕБ-РАЗРАБОТКА /&gt; </p>
+              </section>
+              <section class="team__item-description  team__item-description--color-4">
+                <h3> &lt; ВЕБ-ГРУППА /&gt; </h3>
+                <ul>
+                  <li>Вы становитесь частью причудливого бионического супер-организма.</li>
+                  <li>Сидите в комфортабельном павильоне с кондиционером.</li>
+                  <li>Вы – самые незагорелые из заезда. </li>
+                  <li>Придумаете тысячу (может, миллион?) идей в поисках одной лучшей.</li>
+                  <li>Уязвимость – работаете только «от розетки». </li>
+                </ul>
+                <button class="btn  popup-trigger" data-popup-trigger="team-3">кто здесь?</button>
+              </section>
+            </li>
+            <li class="team__item">
+              <section class="team__item-photo  team__item-photo--color-5">
+                <picture>
+                  <source srcset="/images/team-thumb.webp" type="image/webp">
+                  <source srcset="/images/team-thumb.jpg" type="image/jpeg">
+                  <img src="/images/team-thumb.jpg" alt="Alt Text!">
+                </picture>
+                <p class="team__item-name"> &lt; 3D-МОДЕЛИРОВАНИЕ /&gt; </p>
+              </section>
+              <section class="team__item-description  team__item-description--color-4">
+                <h3> &lt; ВЕБ-ГРУППА /&gt; </h3>
+                <ul>
+                  <li>Вы становитесь частью причудливого бионического супер-организма.</li>
+                  <li>Сидите в комфортабельном павильоне с кондиционером.</li>
+                  <li>Вы – самые незагорелые из заезда. </li>
+                  <li>Придумаете тысячу (может, миллион?) идей в поисках одной лучшей.</li>
+                  <li>Уязвимость – работаете только «от розетки». </li>
+                </ul>
+                <button class="btn  popup-trigger" data-popup-trigger="team-4">кто здесь?</button>
+              </section>
+            </li>
+            <li class="team__item">
+              <section class="team__item-photo  team__item-photo--color-6">
+                <picture>
+                  <source srcset="/images/team-thumb.webp" type="image/webp">
+                  <source srcset="/images/team-thumb.jpg" type="image/jpeg">
+                  <img src="/images/team-thumb.jpg" alt="Alt Text!">
+                </picture>
+                <p class="team__item-name"> &lt; ТЕХПОДДЕРЖКА /&gt; </p>
+              </section>
+              <section class="team__item-description  team__item-description--color-6">
+                <h3> &lt; ВЕБ-ГРУППА /&gt; </h3>
+                <ul>
+                  <li>Вы становитесь частью причудливого бионического супер-организма.</li>
+                  <li>Сидите в комфортабельном павильоне с кондиционером.</li>
+                  <li>Вы – самые незагорелые из заезда. </li>
+                  <li>Придумаете тысячу (может, миллион?) идей в поисках одной лучшей.</li>
+                  <li>Уязвимость – работаете только «от розетки». </li>
+                </ul>
+                <button class="btn  popup-trigger" data-popup-trigger="team-5">кто здесь?</button>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="history">
+        <div class="history__wrapper">
+          <h2 class="history__title">3D-МОДЕЛИРОВАНИЕ</h2>
+          <div class="history__row">
+            <div class="history__col">
+              <div class="history__iframe">
+                <div class="sketchfab-embed-wrapper"> <iframe loading="lazy" title="Женщины" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/9f7d22684a764fcca82d6dfcfac95d9c/embed"> </iframe>
+                  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/9f7d22684a764fcca82d6dfcfac95d9c?utm_medium=embed&utm_campaign=share-popup&utm_content=9f7d22684a764fcca82d6dfcfac95d9c" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Женщины </a> by <a href="https://sketchfab.com/vr-tavrida?utm_medium=embed&utm_campaign=share-popup&utm_content=9f7d22684a764fcca82d6dfcfac95d9c" target="_blank" style="font-weight: bold; color: #1CAAD9;"> vr-tavrida </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=9f7d22684a764fcca82d6dfcfac95d9c" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="history__col">
+              <div class="history__iframe">
+                <div class="sketchfab-embed-wrapper"> <iframe loading="lazy" title="Бегущая по волнам" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/d20bdb58b35044cdb39e797741bf21a5/embed"> </iframe>
+                  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/d20bdb58b35044cdb39e797741bf21a5?utm_medium=embed&utm_campaign=share-popup&utm_content=d20bdb58b35044cdb39e797741bf21a5" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Бегущая по волнам </a> by <a href="https://sketchfab.com/vr-tavrida?utm_medium=embed&utm_campaign=share-popup&utm_content=d20bdb58b35044cdb39e797741bf21a5" target="_blank" style="font-weight: bold; color: #1CAAD9;"> vr-tavrida </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=d20bdb58b35044cdb39e797741bf21a5" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="history__col">
+              <div class="history__iframe">
+                <div class="sketchfab-embed-wrapper"> <iframe loading="lazy" title="Мать земли" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/c237668281784bbb91fa8b9bc151736c/embed"> </iframe>
+                  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/c237668281784bbb91fa8b9bc151736c?utm_medium=embed&utm_campaign=share-popup&utm_content=c237668281784bbb91fa8b9bc151736c" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Мать земли </a> by <a href="https://sketchfab.com/vr-tavrida?utm_medium=embed&utm_campaign=share-popup&utm_content=c237668281784bbb91fa8b9bc151736c" target="_blank" style="font-weight: bold; color: #1CAAD9;"> vr-tavrida </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=c237668281784bbb91fa8b9bc151736c" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="history__col">
+              <div class="history__iframe">
+                <div class="sketchfab-embed-wrapper"> <iframe loading="lazy" title="Танец Силы" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="fullscreen; autoplay; vr" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/fe958667edf54fca95ea47438d4fe02e/embed"> </iframe>
+                  <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/fe958667edf54fca95ea47438d4fe02e?utm_medium=embed&utm_campaign=share-popup&utm_content=fe958667edf54fca95ea47438d4fe02e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> Танец Силы </a> by <a href="https://sketchfab.com/vr-tavrida?utm_medium=embed&utm_campaign=share-popup&utm_content=fe958667edf54fca95ea47438d4fe02e" target="_blank" style="font-weight: bold; color: #1CAAD9;"> vr-tavrida </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=fe958667edf54fca95ea47438d4fe02e" target="_blank" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="history__link">Посмотреть еще</a>
+        </div>
+      </section>
+      <section class="group-block">
+        <div class="group-block__wrapper">
+          <div class="group-block__col">
+            <a class="360-block__photo  image-popup-vertical-fit" href="/images/group-photo.jpg"><img src="/images/group-photo.jpg" alt="Групповая фотография"></a>
+          </div>
+          <div class="group-block__col  group-block__col--text">
+            <h2 class="group-block__title">Общее фото школы</h2>
+            <p class="group-block__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur id rem nesciunt ipsa error ratione blanditiis magnam, magni voluptates a dicta reiciendis sequi obcaecati repellendus, adipisci facere? Necessitatibus, ad. </p>
+          </div>
+          <div class="group-block__col  group-block__col--text">
+            <h2 class="group-block__title">Видео в 360</h2>
+            <p class="group-block__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem consectetur id rem nesciunt ipsa error ratione blanditiis magnam, magni voluptates a dicta reiciendis sequi obcaecati repellendus, adipisci facere? Necessitatibus, ad. </p>
+          </div>
+          <div class="group-block__col">
+            <div class="video">
+              <a class="video__link" href="https://youtu.be/kS5VYt0ISTs">
+                <picture>
+                  <source srcset="https://i.ytimg.com/vi_webp/kS5VYt0ISTs/maxresdefault.webp" type="image/webp">
+                  <img class="video__media" src="https://i.ytimg.com/vi/kS5VYt0ISTs/maxresdefault.jpg" alt="Арт-кластер Таврида 2021 - Место Силы">
+                </picture>
+              </a>
+              <button class="video__button" aria-label="Запустить видео">
+                <svg width="68" height="48" viewBox="0 0 68 48">
+                  <path class="video__button-shape" d="M66.52,7.74c-0.78-2.93-2.49-5.41-5.42-6.19C55.79,.13,34,0,34,0S12.21,.13,6.9,1.55 C3.97,2.33,2.27,4.81,1.48,7.74C0.06,13.05,0,24,0,24s0.06,10.95,1.48,16.26c0.78,2.93,2.49,5.41,5.42,6.19 C12.21,47.87,34,48,34,48s21.79-0.13,27.1-1.55c2.93-0.78,4.64-3.26,5.42-6.19C67.94,34.95,68,24,68,24S67.94,13.05,66.52,7.74z">
+                  </path>
+                  <path class="video__button-icon" d="M 45,24 27,14 27,34"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция бэестейдж -->
+      <section class="backstage" id="backstage">
+        <div class="backstage__wrapper">
+          <h2 class="backstage__title">Backstage</h2>
+        </div>
+        <div class="backstage__slider">
+          <!-- Slider main container -->
+          <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="backstage__grid">
+                  <div class="backstage__grid-item"><a class="image-popup-vertical-fit" href="/images/backstage/backstage-1.jpg"><img src="/images/backstage/backstage-1.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item  backstage__grid-item--vertical-full"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JKMcvwsO15Q"><img src="/images/backstage/backstage-2.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item  backstage__grid-item--horisontal-full"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JKMcvwsO15Q"><img src="/images/backstage/backstage-3.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JKMcvwsO15Q"><img src="/images/backstage/backstage-4.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item"><a class="image-popup-vertical-fit" href="/images/backstage/backstage-1.jpg"><img src="/images/backstage/backstage-5.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item"><a class="image-popup-vertical-fit" href="/images/backstage/backstage-1.jpg"><img src="/images/backstage/backstage-6.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="backstage__grid">
+                  <div class="backstage__grid-item"><a class="image-popup-vertical-fit" href="/images/backstage/backstage-1.jpg"><img src="/images/backstage/backstage-1.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item  backstage__grid-item--vertical-full"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JKMcvwsO15Q"><img src="/images/backstage/backstage-2.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item  backstage__grid-item--horisontal-full"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JKMcvwsO15Q"><img src="/images/backstage/backstage-3.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JKMcvwsO15Q"><img src="/images/backstage/backstage-4.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item"><a class="image-popup-vertical-fit" href="/images/backstage/backstage-1.jpg"><img src="/images/backstage/backstage-5.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item"><a class="image-popup-vertical-fit" href="/images/backstage/backstage-1.jpg"><img src="/images/backstage/backstage-6.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="backstage__grid">
+                  <div class="backstage__grid-item"><a class="image-popup-vertical-fit" href="/images/backstage/backstage-1.jpg"><img src="/images/backstage/backstage-1.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item  backstage__grid-item--vertical-full"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JKMcvwsO15Q"><img src="/images/backstage/backstage-2.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item  backstage__grid-item--horisontal-full"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JKMcvwsO15Q"><img src="/images/backstage/backstage-3.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item"><a class="popup-youtube" href="https://www.youtube.com/watch?v=JKMcvwsO15Q"><img src="/images/backstage/backstage-4.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item"><a class="image-popup-vertical-fit" href="/images/backstage/backstage-1.jpg"><img src="/images/backstage/backstage-5.jpg" alt=""></a>
+                  </div>
+                  <div class="backstage__grid-item"><a class="image-popup-vertical-fit" href="/images/backstage/backstage-1.jpg"><img src="/images/backstage/backstage-6.jpg" alt=""></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </section>
+      <!-- Секция бэестейдж -->
+    </main>
+    <!-- END content -->
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="/images/logo-white.svg" width="100" height="100" alt="Изображение логотипа">
+          <a href="https://tavrida.art/"><img src="/images/tavrida-art-logo.svg" width="200" alt=""></a>
+        </div>
+        <div class="footer__text">
+          <p><button class="popup-trigger" data-popup-trigger="about-project" type="button">О проекте</button></p>
+          <p><a href="#">Youtube</a>-канал</p>
+          <p>Хештег в Instagram <a href="#">#vr_tavrida</a></p>
+          <p><a href="#">Фото- и видеобанк</a></p>
+          <p>В виртуальный тур по Тавриде</p>
+          <p>Стикеры в Телеграме</p>
+        </div>
+        <div class="footer__text">
+          <p>Школа цифровизации искусства</p>
+          <p>© Таврида 2021</p>
+          <div class="footer__text-action">
+            <p>Хочешь так же?</p>
+            <a href="#" class="btn">Xочу повторить</a>
+            <p><button class="btn  popup-trigger" data-popup-trigger="feedback">Обратная связь</button></p>
+          </div>
+        </div>
+        <p class="footer__copy">VR Tours & CMS by <a href="#" target="_blank">Museum Plus</a></p>
+      </div>
+    </footer>
+    <section data-popup-modal="about-project" class="popup-modal ">
+      <article class="popup__article">
+        <button class=" popup-modal__close" type="button">
+          <svg class="main-nav__icon" aria-hidden="true" width="42" height="36">
+            <use class="main-nav__icon-cross" href="/images/sprite_auto.svg#cross"></use>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <div class="popup__content">
+          <h2>О проекте</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita minima illo doloremque. Minus est, quasi hic dolorem ad perspiciatis nihil veniam temporibus odit consectetur et. Reiciendis id quas ex.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita minima illo doloremque. Minus est, quasi hic dolorem ad perspiciatis nihil veniam temporibus odit consectetur et. Reiciendis id quas ex.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita minima illo doloremque. Minus est, quasi hic dolorem ad perspiciatis nihil veniam temporibus odit consectetur et. Reiciendis id quas ex.</p>
+        </div>
+      </article>
+    </section>
+    <section data-popup-modal="feedback" class="popup-modal ">
+      <article class="popup__article">
+        <button class=" popup-modal__close" type="button">
+          <svg class="main-nav__icon" aria-hidden="true" width="42" height="36">
+            <use class="main-nav__icon-cross" href="/images/sprite_auto.svg#cross"></use>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <div class="popup__content">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeoSMfFWWMtPGD-PWRPq2zH8mCE_bcK0oJxn0kT1FmCBq42Ag/viewform?embedded=true" width="640" height="768" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+        </div>
+      </article>
+    </section>
+    <!-- BEGIN scripts -->
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.min.js"></script>
+    <script src="/js/data.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>

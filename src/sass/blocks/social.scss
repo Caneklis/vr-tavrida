@@ -1,0 +1,25 @@
+.social {
+  @include list-reset;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+
+  a {
+    color: $m-color;
+  }
+}
+
+// .social__item {
+//   a {
+//     // display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+//   }
+
+//   @media (max-width: $mobile) {
+//     svg {
+//       width: 40px;
+//       height: 40px;
+//     }
+//   }
+// }

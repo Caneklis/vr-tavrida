@@ -1,0 +1,11 @@
+.fixed-buttons {
+  position: fixed;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  z-index: 1001;
+
+  &--hidden {
+    display: none;
+  }
+}

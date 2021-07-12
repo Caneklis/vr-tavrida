@@ -1,0 +1,13 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1001;
+  background-color: #fff;
+  box-shadow: 0 0 11px 0px rgba($m-color, 0.3);
+}
+
+.header__wrapper {
+  @include wrapper;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

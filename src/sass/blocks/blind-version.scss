@@ -1,0 +1,287 @@
+.blind-version {
+  color: #000 !important;
+
+  .intro {
+    display: none !important;
+  }
+
+  .main-nav__icon {
+    color: #000;
+  }
+
+  #map {
+    display: none;
+  }
+
+  .map__objects {
+    display: block;
+
+    h2 {
+      font-size: 80px;
+      line-height: 120px;
+      /* identical to box height, or 150% */
+
+      color: #000000;
+    }
+
+    ul {
+      li {
+        font-weight: 600;
+        font-size: 72px;
+        line-height: 110px;
+        /* or 153% */
+
+        color: #000000;
+      }
+    }
+  }
+
+  .cite__main-title,
+  .cite__title,
+  .project__title,
+  .team__title,
+  .team__subtitle {
+    font-size: 80px;
+    line-height: 120px;
+    color: #000;
+  }
+
+  .cite__text {
+    padding: 0;
+
+    p {
+      font-weight: 600;
+      font-size: 72px;
+      line-height: 84px;
+    }
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .project__subtitle {
+    color: #000;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 84px;
+  }
+
+  .project__list {
+    display: block !important;
+
+    .project__item {
+      width: 100% !important;
+      background-color: #fff;
+
+      &:hover {
+        transform: scale(1);
+      }
+
+      .project__article {
+        background-color: #fff;
+        display: flex;
+        align-items: flex-start;
+
+        .project__number {
+          position: static;
+          font-size: 120px;
+          line-height: 84px;
+          margin-right: 20px;
+        }
+
+        .project__item-text {
+          font-weight: 600;
+          font-size: 72px;
+          line-height: 84px;
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  .project__middle-text {
+    display: none;
+  }
+
+  .project__list--bottom {
+    display: none !important;
+  }
+
+  .project__blind-version-text {
+    display: block;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 84px;
+  }
+
+  .project__link {
+    display: none;
+  }
+
+  .footer {
+    background-color: #fff;
+  }
+
+  .footer__text {
+    p {
+      font-size: 32px;
+      line-height: 64px;
+      color: #000;
+
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+
+    button {
+      color: #000;
+    }
+  }
+
+  .footer__text-action {
+    .btn {
+      background-color: #fff;
+      border-color: #000;
+      color: #000;
+    }
+  }
+
+  .backstage {
+    display: none;
+  }
+
+  .team__item-photo {
+    display: none;
+  }
+
+  .team__list {
+    display: block;
+  }
+
+  .team__item-description {
+    display: block;
+    margin-bottom: 40px;
+    padding: 0;
+    opacity: 1;
+    transform: rotateX(0);
+    background-color: #fff !important;
+    position: static;
+    color: #000 !important;
+
+    h3 {
+      text-align: left;
+      font-size: 72px;
+      line-height: 80px;
+    }
+
+    li {
+      padding-left: 0;
+      font-size: 48px;
+      line-height: 64px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    .btn {
+      display: none;
+    }
+  }
+
+  .team__item {
+    .popup-modal {
+      display: block;
+      opacity: 1;
+      position: static;
+      pointer-events: auto;
+
+      .team__popup {
+        padding: 0;
+        display: block;
+      }
+
+      .popup-modal__close {
+        display: none;
+      }
+
+      .team__popup-photo {
+        display: none;
+      }
+
+      .team__popup-title {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 80px;
+      }
+
+      .team__popup-text {
+        padding: 0;
+
+        h4,
+        p,
+        li,
+        b,
+        strong {
+          font-size: 48px;
+          line-height: 64px;
+          color: #000;
+        }
+
+        li {
+          padding: 0;
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .group-block__col {
+    width: 100%;
+
+    img {
+      display: none;
+    }
+  }
+
+  .group-block__text {
+    color: #000;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .history {
+    img {
+      display: none;
+    }
+  }
+
+  .history__row {
+    display: block;
+  }
+
+  .history__text {
+    color: #000;
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  .map {
+    background-image: none;
+  }
+
+  .map__mobile-vr {
+    .btn {
+      border-color: #000;
+      background-color: #fff;
+      color: #000;
+      font-size: 50px;
+      line-height: 1.4;
+    }
+  }
+}

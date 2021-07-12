@@ -1,0 +1,24 @@
+.video-section {
+  margin-bottom: 160px;
+
+  @media (max-width: $mobile) {
+    margin-bottom: 80px;
+  }
+}
+
+.video-section__title {
+  @include title;
+}
+
+.video-section__wrapper {
+  @include wrapper;
+  padding-bottom: 55px;
+}
+
+.video-section__subtitle {
+  @include subtitle;
+
+  a {
+    color: $green-color-light;
+  }
+}

@@ -1,0 +1,113 @@
+{% import "partials/_mixins.html" as mixins %}
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Primary Meta Tags -->
+  <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+  <meta type="description" content="{% if description %}{{ description }}{% else %}Description{% endif %}">
+  <link rel="stylesheet" media="all" href="{{ base_path }}css/style.min.css" />
+  <!-- BEGIN social data -->
+  {% include "../partials/_media-tags.html" %}
+  <!-- END social data -->
+  <link rel="icon" href="{{ base_path }}images/favicon/favicon.ico"><!-- 32×32 -->
+  <link rel="icon" href="{{ base_path }}images/favicon/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="{{ base_path }}images/favicon/apple-touch-icon.png"><!-- 180×180 -->
+  <link rel="manifest" href="{{ base_path }}images/favicon/manifest.webmanifest">
+  <meta name="theme-color" content="#4E458F">
+</head>
+
+<body class="page__body" id="start">
+  {% include 'partials/_intro.html' %}
+
+  <header class="header">
+    <div class="header__wrapper">
+      {% include "../partials/_main-nav.html" %}
+    </div>
+  </header>
+
+  <!-- BEGIN content -->
+  <main class="page__main">
+    <!-- body overlay -->
+    <div class="body-blackout"></div>
+    {% block content %}{% endblock %}
+  </main>
+  <!-- END content -->
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__logo">
+        <img src="/images/logo-white.svg" width="100" height="100" alt="Изображение логотипа">
+        <a href="https://tavrida.art/"><img src="/images/tavrida-art-logo.svg" width="200" alt=""></a>
+      </div>
+      <div class="footer__text">
+        <p><button class="popup-trigger" data-popup-trigger="about-project" type="button">О проекте</button></p>
+        <p><a href="#">Youtube</a>-канал</p>
+        <p>Хештег в Instagram <a href="#">#vr_tavrida</a></p>
+        <p><a href="#">Фото- и видеобанк</a></p>
+        <p>В виртуальный тур по Тавриде</p>
+        <p>Стикеры в Телеграме</p>
+      </div>
+      <div class="footer__text">
+        <p>Школа цифровизации искусства</p>
+        <p>© Таврида 2021</p>
+        <div class="footer__text-action">
+          <p>Хочешь так же?</p>
+          <a href="#" class="btn">Xочу повторить</a>
+          <p><button class="btn  popup-trigger" data-popup-trigger="feedback">Обратная связь</button></p>
+        </div>
+      </div>
+      <p class="footer__copy">VR Tours & CMS by <a href="#" target="_blank">Museum Plus</a></p>
+    </div>
+  </footer>
+
+  <section data-popup-modal="about-project" class="popup-modal ">
+    <article class="popup__article">
+      <button class=" popup-modal__close" type="button">
+        <svg class="main-nav__icon" aria-hidden="true" width="42" height="36">
+          <use class="main-nav__icon-cross" href="/images/sprite_auto.svg#cross"></use>
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+
+      <div class="popup__content">
+        <h2>О проекте</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita minima illo doloremque. Minus est,
+          quasi hic dolorem ad perspiciatis nihil veniam temporibus odit consectetur et. Reiciendis id quas ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita minima illo doloremque. Minus est,
+          quasi hic dolorem ad perspiciatis nihil veniam temporibus odit consectetur et. Reiciendis id quas ex.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil expedita minima illo doloremque. Minus est,
+          quasi hic dolorem ad perspiciatis nihil veniam temporibus odit consectetur et. Reiciendis id quas ex.</p>
+      </div>
+    </article>
+  </section>
+
+  <section data-popup-modal="feedback" class="popup-modal ">
+    <article class="popup__article">
+      <button class=" popup-modal__close" type="button">
+        <svg class="main-nav__icon" aria-hidden="true" width="42" height="36">
+          <use class="main-nav__icon-cross" href="/images/sprite_auto.svg#cross"></use>
+        </svg>
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+
+      <div class="popup__content">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeoSMfFWWMtPGD-PWRPq2zH8mCE_bcK0oJxn0kT1FmCBq42Ag/viewform?embedded=true"
+          width="640" height="768" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
+      </div>
+    </article>
+  </section>
+
+  <!-- BEGIN scripts -->
+  <script src="{{ base_path }}js/libs.min.js"></script>
+  <script src="{{ base_path }}js/main.min.js"></script>
+  <script src="{{ base_path }}js/data.js"></script>
+  <!-- END scripts -->
+
+</body>
+
+</html>

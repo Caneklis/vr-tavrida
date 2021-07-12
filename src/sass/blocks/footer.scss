@@ -1,0 +1,147 @@
+.footer {
+  background-color: $m-color;
+}
+
+.footer__wrapper {
+  @include wrapper;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 165px;
+  padding-bottom: 55px;
+
+  @media (max-width: $mobile) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 85px;
+  }
+}
+
+.footer__logo {
+  padding-top: 15px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  color: #fff;
+
+  &--right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  img {
+    margin-bottom: 33px;
+  }
+
+  a {
+    color: inherit;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $green-color-light;
+    }
+  }
+
+  @media (max-width: $mobile) {
+    margin-right: 0;
+    font-size: 14px;
+    line-height: 36px;
+
+    img {
+      margin: 0 auto;
+      margin-bottom: 35px;
+    }
+  }
+}
+
+.footer__text {
+  p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 50px;
+    color: #fff;
+
+    @media (max-width: $mobile) {
+      font-size: 14px;
+      line-height: 36px;
+    }
+
+    a,
+    button {
+      background: transparent;
+      padding: 0;
+      border: none;
+      color: inherit;
+      color: $green-color-light;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover {
+        color: #afb7e3;
+      }
+    }
+  }
+}
+
+.footer__text-action {
+  margin-top: 30px;
+
+  .btn {
+    @include btn;
+    background-color: $green-color-light;
+    color: $m-color;
+    text-transform: uppercase;
+    padding-left: 32px;
+    padding-right: 23px;
+    font-size: 24px;
+    line-height: 28px;
+    transition: all 0.3s ease;
+
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+
+    &:hover {
+      background-color: $m-color;
+      border-color: $green-color-light;
+      color: $green-color-light;
+    }
+  }
+
+  button {
+    min-width: 302px;
+    margin-top: 20px;
+
+    @media (max-width: $mobile) {
+      min-width: 188px;
+    }
+  }
+}
+
+.footer__copy {
+  width: 100%;
+  text-align: right;
+  margin-top: 35px;
+  font-size: 12px;
+  line-height: 1;
+  color: #fff;
+
+  @media (max-width: $mobile) {
+    text-align: center;
+  }
+
+  a {
+    color: $green-color-light;
+  }
+}

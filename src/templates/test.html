@@ -1,0 +1,27 @@
+---
+title: Test page
+description: Description test
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+<section class="map">
+  <div id="map">
+
+  </div>
+  <div class="map__wrapper">
+    <div class="leaflet-control map__controls map__controls--top-right">
+      <p class="map__control-text">Аудиогиды</p>
+      <ul class="map__controls-list">
+        <li class="map__controls-item">
+          <a class="map__controls-btn  map__controls-btn--audio" href="#">Название аудиогида</a>
+        </li>
+        <li class="map__controls-item">
+          <a class="map__controls-btn  map__controls-btn--audio" href="#">Название аудиогида</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

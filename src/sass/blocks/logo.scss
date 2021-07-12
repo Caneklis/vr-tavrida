@@ -1,0 +1,19 @@
+.logo {
+  position: relative;
+  z-index: 1003;
+
+  svg {
+    color: $m-color;
+
+    @media (max-width: $mobile) {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  &--open {
+    svg {
+      color: #000;
+    }
+  }
+}

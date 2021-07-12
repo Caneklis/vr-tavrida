@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@for $index from 1 through 6 {
+  h#{$index} {
+    font-size: (42px / ($index / 3));
+  }
+}
+
+/* Utility class */
+body {
+  margin: 0;
+
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mfp-inline-holder {
+  background-color: #fff;
+  overflow: hidden;
+
+  .mfp-content {
+    @include wrapper;
+    padding-top: 93px;
+    height: 100%;
+    overflow: scroll;
+
+    @media (max-width: $mobile) {
+      padding-top: 20px;
+    }
+  }
+
+  .popup-text {
+    h2 {
+      text-transform: uppercase;
+      font-size: 48px;
+      line-height: 46px;
+      /* or 96% */
+
+      color: #505050;
+    }
+  }
+}
+
+.mfp-close-btn-in .mfp-close {
+  display: block;
+  width: 42px;
+  height: 36px;
+  background-image: url("../images/cross.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+  opacity: 1;
+
+  // @media (max-width: $mobile) {
+  //   top: 20px;
+  // }
+}
+
+.mfp-figure .mfp-close {
+  top: 0;
+  right: 0;
+}
+
+.mfp-bg {
+  background-color: #fff;
+  opacity: 1;
+}
